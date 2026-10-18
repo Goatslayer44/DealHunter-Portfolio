@@ -2,12 +2,13 @@ import sqlite3
 from contextlib import closing
 
 from profit_calculator import calculate_profit
-from product_matcher import match_product
+from product_matcher import match_product, validate_title
 
 DATABASE_NAME = "portfolio.db"
 
 
 def create_database():
+    """Create the products table if it does not already exist."""
     with closing(sqlite3.connect(DATABASE_NAME)) as conn:
         with conn:
             conn.execute("""
@@ -24,6 +25,12 @@ def create_database():
 
 
 def save_product(title, buy_price, sell_price, shipping, fees):
+    """Validate and save a product, returning its expected profit.
+
+    Titles already in the database are not saved twice. Invalid input
+    raises TypeError or ValueError before anything is written.
+    """
+    title = validate_title(title)
     product = match_product(title)
 
     profit = calculate_profit(

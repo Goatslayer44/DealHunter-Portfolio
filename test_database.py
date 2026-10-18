@@ -61,6 +61,14 @@ class TestDatabase(unittest.TestCase):
             finally:
                 keeper.close()
 
+    def test_invalid_input_rejected_before_saving(self):
+        with self.assertRaises(ValueError):
+            database.save_product("", 40, 100, 10, 15)
+        with self.assertRaises(ValueError):
+            database.save_product("Test Item", -5, 100, 10, 15)
+        with self.assertRaises(TypeError):
+            database.save_product("Test Item", "40", 100, 10, 15)
+
     def test_prevent_duplicates(self):
         with patch.object(
             database,

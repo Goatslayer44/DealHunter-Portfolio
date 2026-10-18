@@ -1,203 +1,77 @@
-\# DealHunter Portfolio
+# DealHunter Portfolio
 
+![Tests](https://github.com/Goatslayer44/DealHunter-Portfolio/actions/workflows/tests.yml/badge.svg)
 
+A small Python project that identifies products from their titles, estimates
+resale profit, and stores results in a SQLite database. It is a beginner-level
+portfolio project built to practice Python, SQL, input validation, and automated testing.
 
-A Python-based product analysis and profit estimation application.
+## Features
 
+- Rule-based product identification using regular expressions
+- Profit calculation: resale price minus purchase price, shipping, and fees
+- Input validation (rejects negative, non-numeric, NaN, and empty values)
+- SQLite storage using parameterized queries, with duplicate-title detection
+- Unit tests that run automatically with GitHub Actions
 
+## Technologies
 
-This project demonstrates Python programming, product identification,
+Python 3.10+, SQLite, SQL, regular expressions, `unittest`, Git and GitHub Actions.
+No third-party packages are required.
 
-SQLite database management, and automated software testing.
-
-
-
-\## Overview
-
-
-
-DealHunter Portfolio analyzes sample product listings, categorizes
-
-products, estimates potential resale profits, and stores results
-
-in a SQLite database.
-
-
-
-This is a standalone educational demonstration inspired by a larger
-
-private software project.
-
-
-
-\## Features
-
-
-
-\- Product identification using Python regular expressions
-
-\- Profit calculations including purchase price, shipping, and fees
-
-\- SQLite database storage
-
-\- Duplicate product detection
-
-\- Automated unit testing
-
-\- Modular Python application structure
-
-
-
-\## Technologies
-
-
-
-\- Python 3
-
-\- SQLite
-
-\- SQL
-
-\- Regular Expressions
-
-\- Python unittest
-
-
-
-\## Project Structure
-
-
-
-\- profit\_calculator.py â€” Calculates estimated profits
-
-\- product\_matcher.py â€” Identifies product categories
-
-\- database.py â€” Saves and retrieves product information
-
-\- test\_profit\_calculator.py â€” Tests profit calculations
-
-\- test\_database.py â€” Tests database operations
-
-
-
-\## Getting Started
-
-
-
-Requirements: Python 3
-
-
-
-Run the profit calculator:
-
-
+## Getting Started
 
 ```bash
+git clone https://github.com/Goatslayer44/DealHunter-Portfolio.git
+cd DealHunter-Portfolio
 
-python profit\_calculator.py
-
+python profit_calculator.py   # profit example
+python product_matcher.py     # product matching examples
+python database.py            # saves sample products to a local portfolio.db
 ```
 
-
-
-Run the product matcher:
-
-
+## Running the Tests
 
 ```bash
-
-python product\_matcher.py
-
-```
-
-
-
-Run the database demonstration:
-
-
-
-```bash
-
-python database.py
-
-```
-
-
-
-Run automated tests:
-
-
-
-```bash
-
 python -m unittest discover -v
-
 ```
 
+Tests use in-memory databases, so they do not create or change `portfolio.db`.
 
+## Project Structure
 
-\## Example Output
+| File | Purpose |
+| --- | --- |
+| `profit_calculator.py` | Validates prices and calculates profit |
+| `product_matcher.py` | Validates titles and identifies model/category |
+| `database.py` | Creates the SQLite table, saves and lists products |
+| `test_*.py` | Unit tests for each module |
+| `.github/workflows/tests.yml` | Runs the tests on every push and pull request |
 
-
+## Example Output
 
 ```text
-
 Product: John Deere Z930M Mower Part
-
 Model: Z930M
-
 Category: LAWN MOWER PART
-
 Expected Profit: $180.00
-
 ```
 
+## Limitations
 
+- All prices are fictional sample values. The project uses no live marketplace
+  data (including eBay) and no AI.
+- Matching only recognizes a few hard-coded examples.
+- Duplicates are detected by exact title only.
+- The calculated profit is an arithmetic example, not a market estimate or a guarantee.
 
-All examples use fictional purchase and resale prices.
+## Security Notes
 
+- SQL uses parameterized queries (no string-built SQL).
+- Databases, `.env` files, and keys are listed in `.gitignore`.
+- The repository contains no credentials or personal data.
 
+## About
 
-\## Current Limitations
-
-
-
-\- Product identification uses basic matching rules.
-
-\- Duplicate detection is based on product titles.
-
-\- Resale values are supplied as sample inputs, not live market estimates.
-
-\- The application does not automatically purchase products.
-
-
-
-\## Future Improvements
-
-
-
-\- More advanced product matching
-
-\- Improved database validation
-
-\- CSV import and export
-
-\- Command-line interface
-
-\- Additional automated tests
-
-
-
-\## Project Purpose
-
-
-
-Built to demonstrate practical Python development,
-
-database management, problem-solving, and automated testing.
-
-
-
-The original DealHunter application is maintained separately
-
-as a private project.
+This is a standalone educational demo inspired by a larger private project,
+which is maintained separately and is not part of this repository.
