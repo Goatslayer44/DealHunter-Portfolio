@@ -6,7 +6,19 @@ A small Python project that identifies products from their titles, estimates
 resale profit, and stores results in a SQLite database. It is a beginner-level
 portfolio project built to practice Python, SQL, input validation, and automated testing.
 
-## Features
+## Featured: Security Log Analyzer
+
+The [`security_log_analyzer/`](security_log_analyzer/) folder contains a
+cybersecurity learning project that reads fictional authentication logs and
+flags repeated failed logins, suspicious IP addresses, and successful logins
+that follow multiple failures. It uses only the standard library and has its
+own unit tests. See its [README](security_log_analyzer/README.md) for details.
+
+```bash
+python -m security_log_analyzer.analyzer security_log_analyzer/sample_auth.log
+```
+
+## Product Matching and Profit Demo Features
 
 - Rule-based product identification using regular expressions
 - Profit calculation: resale price minus purchase price, shipping, and fees
@@ -46,6 +58,7 @@ Tests use in-memory databases, so they do not create or change `portfolio.db`.
 | `product_matcher.py` | Validates titles and identifies model/category |
 | `database.py` | Creates the SQLite table, saves and lists products |
 | `test_*.py` | Unit tests for each module |
+| `security_log_analyzer/` | Authentication log analyzer with sample data, docs, and tests |
 | `.github/workflows/tests.yml` | Runs the tests on every push and pull request |
 
 ## Example Output
