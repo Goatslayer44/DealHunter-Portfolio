@@ -1,0 +1,14 @@
+order_id,customer,date,product,amount
+1001,John Smith,2026-11-02,Coffee Beans 12oz,18.50
+1002,Mary Jones,2026-11-02,Tea Sampler,24.00
+2001,Tom Baker,2026-11-02,Coffee Beans 12oz,18.50
+1003,Bob Wilson,2026-11-03,Coffee Beans 12oz,18.50
+1004,,2026-11-03,Gift Card 25,
+2002,Anna White,2026-11-03,Tea Sampler,24.00
+2003,Chris P. Bacon,2026-11-03,Gift Card 50,50.00
+1005,Sarah Lee,2026-11-04,Mug - Large,1200.00
+3001,Pat Green,2026-11-04,Mug - Large,15.75
+2004,Lisa Ray,2026-11-05,Coffee Beans 12oz,18.50
+3002,Jamie Fox,2026-11-05,Tea Sampler,24.00
+3003,Sam Hill,2026-11-06,Gift Card 25,25.00
+3004,Jo King,not-a-date,Coffee Beans 12oz,18.50

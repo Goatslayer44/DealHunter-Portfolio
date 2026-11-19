@@ -1,0 +1,14 @@
+SPREADSHEET CLEANUP - SUMMARY
+========================================
+Files merged:                 3
+Rows read in:                 17
+Empty rows dropped:           1
+Exact duplicates removed:     3
+Repeat order IDs removed:     0
+Dates reformatted:            10
+Amounts cleaned ($, commas):  6
+Dates that need a human look: 1
+Amounts that need a look:     0
+----------------------------------------
+Clean rows out:               13
+Total sales in clean file:    $1,455.25
