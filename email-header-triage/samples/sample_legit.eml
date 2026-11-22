@@ -1,0 +1,21 @@
+Return-Path: <bounces@billing.example.com>
+Received: from mail-out.example.com (mail-out.example.com [198.51.100.10])
+        by mx.localshop.example with ESMTPS id abc123
+        for <owner@localshop.example>; Sun, 22 Nov 2026 15:00:00 +0000
+Authentication-Results: mx.localshop.example;
+        spf=pass smtp.mailfrom=billing.example.com;
+        dkim=pass header.d=example.com;
+        dmarc=pass (p=REJECT) header.from=example.com
+From: "Example Billing" <invoices@example.com>
+To: owner@localshop.example
+Subject: Synthetic Test - Invoice #1042 Ready
+Date: Sun, 22 Nov 2026 15:00:00 +0000
+Message-ID: <inv1042@example.com>
+Content-Type: text/plain; charset="utf-8"
+
+Hello,
+
+Your monthly invoice #1042 is ready in your account portal:
+https://billing.example.com/invoices/1042
+
+(Synthetic RFC 2606 test fixture - not a real email.)

@@ -1,0 +1,23 @@
+Return-Path: <bounce@mailer-992.example.net>
+Received: from unknown (198.51.100.77)
+        by mx.localshop.example with SMTP id xyz789
+        for <owner@localshop.example>; Sun, 22 Nov 2026 15:05:00 +0000
+Authentication-Results: mx.localshop.example;
+        spf=fail smtp.mailfrom=mailer-992.example.net;
+        dkim=none;
+        dmarc=fail (p=REJECT) header.from=alerts-bank.example.org
+From: "security@realbank.example.com" <notify@alerts-bank.example.org>
+Reply-To: urgent-desk@collect-replies.example.net
+To: owner@localshop.example
+Subject: Synthetic Test - URGENT Account Verification Required
+Date: Sun, 22 Nov 2026 15:05:00 +0000
+Message-ID: <phish001@mailer-992.example.net>
+MIME-Version: 1.0
+Content-Type: text/html; charset="utf-8"
+
+<html><body>
+<p>Your account is locked. Verify immediately:</p>
+<p><a href="http://198.51.100.77/login">https://realbank.example.com/verify</a></p>
+<p>Backup link: https://xn--realbnk-8wa.example.net/reset</p>
+<!-- Synthetic RFC 2606 test fixture - not a real email. -->
+</body></html>

@@ -18,6 +18,20 @@ own unit tests. See its [README](security_log_analyzer/README.md) for details.
 python -m security_log_analyzer.analyzer security_log_analyzer/sample_auth.log
 ```
 
+## Featured: Email Header & Phishing Triage Analyzer
+
+The [`email-header-triage/`](email-header-triage/) folder contains an offline,
+zero-dependency Python tool that parses raw `.eml` headers, extracts SPF/DKIM/DMARC
+signals (keeping missing headers `UNKNOWN`), flags `From`/`Reply-To`/`Return-Path`
+mismatches and display-name spoofing, and defangs risky links (raw IPs, punycode,
+`@` tricks, mismatched HTML anchors). Uses synthetic RFC 2606 `.example` fixtures
+only and includes 6 offline unit tests. See its
+[README](email-header-triage/README.md) for details.
+
+```bash
+python email-header-triage/email_header_analyzer.py email-header-triage/samples/sample_phish.eml
+```
+
 ## Product Matching and Profit Demo Features
 
 - Rule-based product identification using regular expressions
@@ -59,6 +73,7 @@ Tests use in-memory databases, so they do not create or change `portfolio.db`.
 | `database.py` | Creates the SQLite table, saves and lists products |
 | `test_*.py` | Unit tests for each module |
 | `security_log_analyzer/` | Authentication log analyzer with sample data, docs, and tests |
+| `email-header-triage/` | Offline `.eml` header & phishing triage analyzer with synthetic samples and tests |
 | `.github/workflows/tests.yml` | Runs the tests on every push and pull request |
 
 ## Example Output
