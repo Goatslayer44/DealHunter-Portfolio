@@ -1,0 +1,10 @@
+{
+  "domain": "needshelp.example.org",
+  "spf_txt_records": [],
+  "dmarc_txt_records": [],
+  "https": {
+    "reachable": true,
+    "cert_days_remaining": 8,
+    "headers": {}
+  }
+}

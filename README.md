@@ -32,6 +32,19 @@ only and includes 6 offline unit tests. See its
 python email-header-triage/email_header_analyzer.py email-header-triage/samples/sample_phish.eml
 ```
 
+## Featured: Public-Records Email & Website Checkup Tool
+
+The [`domain-security-audit/`](domain-security-audit/) folder contains an offline-by-default,
+zero-dependency Python tool that evaluates public DNS TXT records (`SPF`, `DMARC`) and a
+standard HTTPS connection (certificate expiry + common response headers) and outputs a
+plain-English 1-page checkup report. Performs **no port scanning and no vulnerability
+probing**. Uses synthetic RFC 2606 `.example` fixtures and includes 7 offline unit tests.
+See its [README](domain-security-audit/README.md) for details.
+
+```bash
+python domain-security-audit/domain_security_check.py --input domain-security-audit/samples/sample_weak.example.json
+```
+
 ## Product Matching and Profit Demo Features
 
 - Rule-based product identification using regular expressions
@@ -74,6 +87,7 @@ Tests use in-memory databases, so they do not create or change `portfolio.db`.
 | `test_*.py` | Unit tests for each module |
 | `security_log_analyzer/` | Authentication log analyzer with sample data, docs, and tests |
 | `email-header-triage/` | Offline `.eml` header & phishing triage analyzer with synthetic samples and tests |
+| `domain-security-audit/` | Public-records SPF/DMARC/HTTPS checkup tool (no port scanning) with synthetic samples and tests |
 | `.github/workflows/tests.yml` | Runs the tests on every push and pull request |
 
 ## Example Output

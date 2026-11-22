@@ -1,0 +1,17 @@
+{
+  "domain": "localshop.example.com",
+  "spf_txt_records": [
+    "v=spf1 include:_spf.mailprovider.example.com -all"
+  ],
+  "dmarc_txt_records": [
+    "v=DMARC1; p=reject; rua=mailto:dmarc@localshop.example.com"
+  ],
+  "https": {
+    "reachable": true,
+    "cert_days_remaining": 75,
+    "headers": {
+      "Strict-Transport-Security": "max-age=31536000; includeSubDomains",
+      "X-Content-Type-Options": "nosniff"
+    }
+  }
+}
