@@ -32,17 +32,18 @@ only and includes 6 offline unit tests. See its
 python email-header-triage/email_header_analyzer.py email-header-triage/samples/sample_phish.eml
 ```
 
-## Featured: Public-Records Email & Website Checkup Tool
+## Featured: Public Email & Website Check (v1.1)
 
 The [`domain-security-audit/`](domain-security-audit/) folder contains an offline-by-default,
-zero-dependency Python tool that evaluates public DNS TXT records (`SPF`, `DMARC`) and a
-standard HTTPS connection (certificate expiry + common response headers) and outputs a
-plain-English 1-page checkup report. Performs **no port scanning and no vulnerability
-probing**. Uses synthetic RFC 2606 `.example` fixtures and includes 7 offline unit tests.
+zero-dependency Python tool that checks public DNS TXT records (`SPF` and `DMARC` via the
+complete **RFC 9989 DNS Tree Walk**) and a narrow standard HTTPS connection (hostname,
+check time, TLS certificate validation, and redirect destination if present). Performs
+**no port scanning and no vulnerability probing**; sending-path verification stays
+`UNVERIFIED`. Uses fictional RFC 2606 `.example` fixtures and includes 9 offline unit tests.
 See its [README](domain-security-audit/README.md) for details.
 
 ```bash
-python domain-security-audit/domain_security_check.py --input domain-security-audit/samples/sample_weak.example.json
+python domain-security-audit/domain_security_check.py --input domain-security-audit/samples/sample_fictional_shop.example.json
 ```
 
 ## Product Matching and Profit Demo Features

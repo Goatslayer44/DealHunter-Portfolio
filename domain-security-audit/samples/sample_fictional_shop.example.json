@@ -1,0 +1,35 @@
+{
+  "fictional": true,
+  "domain": "mail.billing.shop.example",
+  "checked_date": "2026-11-22",
+  "checked_utc": "2026-11-22T18:00:00Z",
+  "spf_query_status": "timeout",
+  "spf_txt_records": null,
+  "dmarc_tree_walk": [
+    {
+      "query_domain": "mail.billing.shop.example",
+      "status": "ok",
+      "txt_records": []
+    },
+    {
+      "query_domain": "billing.shop.example",
+      "status": "ok",
+      "txt_records": []
+    },
+    {
+      "query_domain": "shop.example",
+      "status": "ok",
+      "txt_records": [
+        "v=DMARC1; p=quarantine; sp=reject; rua=mailto:dmarc@shop.example"
+      ]
+    }
+  ],
+  "https": {
+    "hostname": "mail.billing.shop.example",
+    "checked_utc": "2026-11-22T18:00:00Z",
+    "reachable": true,
+    "cert_valid": true,
+    "cert_days_remaining": 65,
+    "redirect_destination": null
+  }
+}

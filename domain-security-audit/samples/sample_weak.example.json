@@ -1,10 +1,28 @@
 {
+  "fictional": true,
   "domain": "needshelp.example.org",
+  "checked_date": "2026-11-22",
+  "checked_utc": "2026-11-22T18:00:00Z",
+  "spf_query_status": "ok",
   "spf_txt_records": [],
-  "dmarc_txt_records": [],
+  "dmarc_tree_walk": [
+    {
+      "query_domain": "needshelp.example.org",
+      "status": "ok",
+      "txt_records": []
+    },
+    {
+      "query_domain": "example.org",
+      "status": "ok",
+      "txt_records": []
+    }
+  ],
   "https": {
+    "hostname": "needshelp.example.org",
+    "checked_utc": "2026-11-22T18:00:00Z",
     "reachable": true,
+    "cert_valid": true,
     "cert_days_remaining": 8,
-    "headers": {}
+    "redirect_destination": "https://www.needshelp.example.org/"
   }
 }

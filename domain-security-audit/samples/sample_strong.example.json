@@ -1,17 +1,27 @@
 {
+  "fictional": true,
   "domain": "localshop.example.com",
+  "checked_date": "2026-11-22",
+  "checked_utc": "2026-11-22T18:00:00Z",
+  "spf_query_status": "ok",
   "spf_txt_records": [
     "v=spf1 include:_spf.mailprovider.example.com -all"
   ],
-  "dmarc_txt_records": [
-    "v=DMARC1; p=reject; rua=mailto:dmarc@localshop.example.com"
+  "dmarc_tree_walk": [
+    {
+      "query_domain": "localshop.example.com",
+      "status": "ok",
+      "txt_records": [
+        "v=DMARC1; p=reject; rua=mailto:dmarc@localshop.example.com"
+      ]
+    }
   ],
   "https": {
+    "hostname": "localshop.example.com",
+    "checked_utc": "2026-11-22T18:00:00Z",
     "reachable": true,
+    "cert_valid": true,
     "cert_days_remaining": 75,
-    "headers": {
-      "Strict-Transport-Security": "max-age=31536000; includeSubDomains",
-      "X-Content-Type-Options": "nosniff"
-    }
+    "redirect_destination": null
   }
 }
