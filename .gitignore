@@ -6,13 +6,43 @@ __pycache__/
 *.db
 *.sqlite
 *.sqlite3
+*.db-wal
+*.db-shm
+*.db-journal
+*.sqlite-wal
+*.sqlite-shm
+*.sqlite-journal
 
-# Passwords and API keys
+# Passwords, API keys, and credential files
+env.txt
 .env
 .env.*
 !.env.example
 *.pem
 *.key
+*.p12
+*.pfx
+*.ppk
+*credentials*.json
+*secret*.json
+*token*.json
+
+# Data, price logs, and photos (never push; keep only intentional fictional demo CSVs)
+data/
+*.jsonl
+*.feather
+*.parquet
+*.log
+*.png
+*.jpg
+*.jpeg
+*.heic
+*.webp
+*.bmp
+*.gif
+*.csv
+!spreadsheet-cleanup-tool/sample_data/*.csv
+!spreadsheet-cleanup-tool/output/*.csv
 
 # Virtual environments
 .venv/
