@@ -1,0 +1,33 @@
+[
+  {
+    "scenario_id": "CALL-01",
+    "caller_name": "Marek Kowalsky",
+    "callback_number": "205-555-0114",
+    "service_requested": "Furnace repair (no heat)",
+    "preferred_datetime": "2026-11-24 09:00",
+    "notes": "Planted error: misspelled last name (Kowalsky vs Kowalski)."
+  },
+  {
+    "scenario_id": "CALL-02",
+    "caller_name": "Denise Carter",
+    "callback_number": "205-555-0189",
+    "service_requested": "Brake pad replacement",
+    "preferred_datetime": "2026-11-25 13:30",
+    "notes": "Planted error: transposed phone digits (0189 vs 0198)."
+  },
+  {
+    "scenario_id": "CALL-03",
+    "caller_name": "Trevor Boudreaux",
+    "callback_number": "205-555-0127",
+    "service_requested": "Kitchen sink drain unclogging",
+    "preferred_datetime": "2026-11-23 10:00",
+    "notes": "Planted error: kept old appointment time (10:00 vs 14:00)."
+  },
+  {
+    "scenario_id": "CALL-04",
+    "caller_name": "Minh Nguyen",
+    "callback_number": "205-555-0143",
+    "service_requested": "New Windows laptop setup and photo transfer",
+    "notes": "Planted error: missing required preferred_datetime field."
+  }
+]

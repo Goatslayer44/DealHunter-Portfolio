@@ -1,0 +1,242 @@
+[
+  {
+    "scenario_id": "CALL-01",
+    "business_type": "Fictional HVAC Shop (Oakridge Heating.example)",
+    "disruptions": ["spelled_name", "digit_by_digit_phone"],
+    "transcript": "Caller: Hi, my furnace stopped blowing warm air. My name is Marek Kowalski — that's M-A-R-E-K, last name K-O-W-A-L-S-K-I. Best callback is 2-0-5, 5-5-5, 0-1-1-4. Can someone come out Tuesday November 24, 2026 at 9:00 AM? The thermostat clicks but no heat."
+  },
+  {
+    "scenario_id": "CALL-02",
+    "business_type": "Fictional Auto Repair (Pinehill Garage.example)",
+    "disruptions": ["wrong_phone_then_corrected"],
+    "transcript": "Caller: Hey, this is Denise Carter. I need a brake pad replacement on my sedan. Call me at 205-555-0182 — wait, sorry, that's my old office line. Use 205-555-0198 instead. Wednesday November 25, 2026 at 1:30 PM works best. Front brakes are squealing."
+  },
+  {
+    "scenario_id": "CALL-03",
+    "business_type": "Fictional Plumbing Co (Creekside Plumbing.example)",
+    "disruptions": ["changed_appointment_time", "background_noise"],
+    "transcript": "Caller: [dog barking loudly] Hello? Yeah, this is Trevor Boudreaux — B-O-U-D-R-E-A-U-X. Kitchen sink drain is backed up. [dog barking] Can we do Monday November 23 at 10:00 AM? Actually hold on, my wife has the car — make it Monday November 23, 2026 at 2:00 PM. Number is 205-555-0127."
+  },
+  {
+    "scenario_id": "CALL-04",
+    "business_type": "Fictional Computer Help (Example Local Tech)",
+    "disruptions": ["spelled_name", "mumbled_speech"],
+    "transcript": "Caller: Hi, I need help setting up a new Windows laptop and moving my photos. Name is Minh Nguyen — M-I-N-H, N-G-U-Y-E-N. Phone is [mumbled] uh, let me repeat clearly: 2-0-5, 5-5-5, 0-1-4-3. Let's book Thursday November 26, 2026 at 11:00 AM."
+  },
+  {
+    "scenario_id": "CALL-05",
+    "business_type": "Fictional Lawn Equipment Shop (Meadows Mower.example)",
+    "disruptions": ["interruption", "background_noise"],
+    "transcript": "Caller: [truck backing up beep beep] Yeah I need a zero-turn mower blade sharpening and oil change. Hold on—[talks to someone off-phone: 'Put it by the gate!'] Sorry about that. Name's Gary Hensley, 205-555-0155. Friday November 27, 2026 at 8:30 AM. Deck is 54 inches."
+  },
+  {
+    "scenario_id": "CALL-06",
+    "business_type": "Fictional Dental Clinic (Riverbend Dental.example)",
+    "disruptions": ["spelled_name", "wrong_phone_then_corrected"],
+    "transcript": "Caller: Hello, I'd like a routine dental cleaning. My name is Siobhan Gallagher — S-I-O-B-H-A-N, G-A-L-L-A-G-H-E-R. Callback is 205-555-0161 — no, transpose those last two, it's 205-555-0116. Monday November 30, 2026 at 3:00 PM please."
+  },
+  {
+    "scenario_id": "CALL-07",
+    "business_type": "Fictional Electrical Co (Summit Electric.example)",
+    "disruptions": ["changed_appointment_time", "interruption"],
+    "transcript": "Caller: Hi, this is Angela Morales. Our garage breaker keeps tripping — wait, can you hear me? My kid just dropped a pan. Anyway, breaker panel inspection. I first thought Tuesday at 4:00 PM, but let's do Wednesday December 2, 2026 at 9:30 AM instead. 205-555-0174."
+  },
+  {
+    "scenario_id": "CALL-08",
+    "business_type": "Fictional HVAC Shop (Oakridge Heating.example)",
+    "disruptions": ["mumbled_speech", "digit_by_digit_phone"],
+    "transcript": "Caller: [static on line] Need an annual furnace tune-up. Name is Raymond... [mumbled] ...Raymond Pritchard, P-R-I-T-C-H-A-R-D. Number is two zero five, five five five, zero one three nine. Thursday December 3, 2026 at 1:00 PM."
+  },
+  {
+    "scenario_id": "CALL-09",
+    "business_type": "Fictional Auto Repair (Pinehill Garage.example)",
+    "disruptions": ["clean_baseline"],
+    "transcript": "Caller: Hi, this is Hannah Brooks. I'd like to schedule an oil change and tire rotation for Friday December 4, 2026 at 10:30 AM. My number is 205-555-0102. It's a 2021 pickup."
+  },
+  {
+    "scenario_id": "CALL-10",
+    "business_type": "Fictional Plumbing Co (Creekside Plumbing.example)",
+    "disruptions": ["wrong_phone_then_corrected", "changed_appointment_time"],
+    "transcript": "Caller: Hey, Kevin Okafor here — O-K-A-F-O-R. Water heater is leaking at the base. Call me at 205-555-0148, wait no, 0149 — 205-555-0149. Originally wanted noon Monday, let's do Monday December 7, 2026 at 8:00 AM so I can meet the tech before work."
+  },
+  {
+    "scenario_id": "CALL-11",
+    "business_type": "Fictional Computer Help (Example Local Tech)",
+    "disruptions": ["spelled_name", "background_noise"],
+    "transcript": "Caller: [TV playing loudly] Hi, my office Wi-Fi router keeps dropping out. I'm Priya Subramanian — P-R-I-Y-A, S-U-B-R-A-M-A-N-I-A-N. Callback 205-555-0188. Tuesday December 8, 2026 at 2:30 PM. Small 4-person office."
+  },
+  {
+    "scenario_id": "CALL-12",
+    "business_type": "Fictional Roofing Co (Cedar Ridge Roofing.example)",
+    "disruptions": ["interruption", "digit_by_digit_phone"],
+    "transcript": "Caller: Looking for a roof leak inspection after last night's storm. Name is Curtis McAllister — M-C-A-L-L-I-S-T-E-R. Hang on, someone's at my door... okay I'm back. Phone is 2-0-5, 5-5-5, 0-1-7-0. Wednesday December 9, 2026 at 11:30 AM."
+  },
+  {
+    "scenario_id": "CALL-13",
+    "business_type": "Fictional Pest Control (Valley Pest.example)",
+    "disruptions": ["mumbled_speech", "changed_appointment_time"],
+    "transcript": "Caller: Hi, we're seeing ants in the pantry — need a quarterly pest spray. Name is Brenda [mumbled] uh, Brenda Zielinski, Z-I-E-L-I-N-S-K-I. Phone 205-555-0133. Put me down for Thursday at 9:00 AM — wait, I have a doctor's visit, make it Thursday December 10, 2026 at 3:30 PM."
+  },
+  {
+    "scenario_id": "CALL-14",
+    "business_type": "Fictional Tree Service (Walker Tree.example)",
+    "disruptions": ["background_noise", "wrong_phone_then_corrected"],
+    "transcript": "Caller: [wind noise] Hey, this is Darryl Jenkins. Got a dead oak limb hanging over my driveway, need a tree trimming estimate. Reach me at 205-555-0191 — nope, that's my wife's cell, call 205-555-0192. Friday December 11, 2026 at 9:00 AM."
+  },
+  {
+    "scenario_id": "CALL-15",
+    "business_type": "Fictional Dental Clinic (Riverbend Dental.example)",
+    "disruptions": ["clean_baseline"],
+    "transcript": "Caller: Good morning, my name is Naomi Patel. I have a chipped molar and need an emergency dental exam. My callback number is 205-555-0121. Can I come in Monday December 14, 2026 at 8:15 AM?"
+  },
+  {
+    "scenario_id": "CALL-16",
+    "business_type": "Fictional Computer Help (Example Local Tech)",
+    "disruptions": ["spelled_name", "interruption"],
+    "transcript": "Caller: Hi, I think I clicked a sketchy email link and want a malware checkup and password reset help. Name is Wojciech Nowak — W-O-J-C-I-E-C-H, N-O-W-A-K. [call waiting beep] Sorry, ignored that call. Number is 205-555-0166. Tuesday December 15, 2026 at 10:00 AM."
+  },
+  {
+    "scenario_id": "CALL-17",
+    "business_type": "Fictional Auto Repair (Pinehill Garage.example)",
+    "disruptions": ["mumbled_speech", "wrong_phone_then_corrected"],
+    "transcript": "Caller: Yeah, check engine light came on, need an OBD diagnostic scan. This is [mumbled] Leon... Leonidas Vance — L-E-O-N-I-D-A-S V-A-N-C-E. Phone 205-555-0109, wait, 0108, sorry: 205-555-0108. Wednesday December 16, 2026 at 2:00 PM."
+  },
+  {
+    "scenario_id": "CALL-18",
+    "business_type": "Fictional Electrical Co (Summit Electric.example)",
+    "disruptions": ["changed_appointment_time", "digit_by_digit_phone"],
+    "transcript": "Caller: Hello, Evelyn Choi here — C-H-O-I. I want a quote for installing a 240V EV charger outlet in my garage. My phone is 2-0-5, 5-5-5, 0-1-5-0. Let's say Thursday at 1:00 PM — actually Friday December 18, 2026 at 10:00 AM is much better."
+  },
+  {
+    "scenario_id": "CALL-19",
+    "business_type": "Fictional Lawn Equipment Shop (Meadows Mower.example)",
+    "disruptions": ["background_noise", "spelled_name"],
+    "transcript": "Caller: [chainsaw idling nearby] Hey, need a chainsaw carburetor rebuild. Name is Caleb Thibodeaux — T-H-I-B-O-D-E-A-U-X. Call 205-555-0177. Monday December 21, 2026 at 9:00 AM. It won't stay running at idle."
+  },
+  {
+    "scenario_id": "CALL-20",
+    "business_type": "Fictional Plumbing Co (Creekside Plumbing.example)",
+    "disruptions": ["interruption", "wrong_phone_then_corrected", "changed_appointment_time"],
+    "transcript": "Caller: Hi, this is Sharon Al-Mansoor — A-L hyphen M-A-N-S-O-O-R. Outdoor spigot is leaking. Hold on, let me step outside... okay. Callback is 205-555-0112 — no, 205-555-0113. Wanted Tuesday at 4:00 PM, actually let's make it Tuesday December 22, 2026 at 1:15 PM."
+  },
+  {
+    "scenario_id": "CALL-21",
+    "business_type": "Fictional HVAC Shop (Oakridge Heating.example)",
+    "disruptions": ["same_name_as_another_caller"],
+    "transcript": "Caller: Hi, this is Jordan Ellis. My heat pump is making a loud rattling noise outside. Best number is 205-555-0141. Can we book Wednesday December 23, 2026 at 9:00 AM? Unit is on the south side of the house."
+  },
+  {
+    "scenario_id": "CALL-22",
+    "business_type": "Fictional Auto Repair (Pinehill Garage.example)",
+    "disruptions": ["same_name_as_another_caller"],
+    "transcript": "Caller: Hey, Jordan Ellis calling — different Jordan Ellis if you have another one on file. I need a wheel alignment on my minivan. Call me at 205-555-0184. Let's do Wednesday December 23, 2026 at 2:00 PM."
+  },
+  {
+    "scenario_id": "CALL-23",
+    "business_type": "Fictional Computer Help (Example Local Tech)",
+    "disruptions": ["landline_callback_no_sms"],
+    "transcript": "Caller: Hello, my name is Martha Holloway. My home printer stopped connecting to my desktop. Please call me back at 205-555-0123 — that is a home landline so do NOT send text messages, you have to call. Thursday December 24, 2026 at 10:00 AM works."
+  },
+  {
+    "scenario_id": "CALL-24",
+    "business_type": "Fictional Plumbing Co (Creekside Plumbing.example)",
+    "disruptions": ["angry_caller_talking_over_assistant", "interruption"],
+    "transcript": "Assistant: Thank you for calling Creekside— Caller: [talking over assistant, angry] Yeah I don't have time for a speech, my basement pipe burst an hour ago and nobody called back! Assistant: I'm sorry, let me get your— Caller: [interrupting] Victor Ramirez! R-A-M-I-R-E-Z! Call 205-555-0162! Get someone here Monday December 28, 2026 at 8:00 AM sharp! Main shutoff is already off."
+  },
+  {
+    "scenario_id": "CALL-25",
+    "business_type": "Fictional Auto Repair (Pinehill Garage.example)",
+    "disruptions": ["spanish_language_caller"],
+    "transcript": "Caller: Hola, buenos dias. Necesito cambiar la bateria de mi camioneta — no prende bien en la manana. Mi nombre es Carlos Mendoza. Mi numero es 205-555-0137. Podemos hacer una cita el lunes 28 de diciembre de 2026 a las 11:00 de la manana? Gracias."
+  },
+  {
+    "scenario_id": "CALL-26",
+    "business_type": "Fictional Dental Clinic (Riverbend Dental.example)",
+    "disruptions": ["misspelled_name_then_corrected"],
+    "transcript": "Caller: Hi, I need a crown re-cementing — mine popped loose at lunch. Name is Erica Schmidt. That's S-C-H-M-I-T — wait, sorry, I skipped a letter! S-C-H-M-I-D-T, with a D before the T. Phone is 205-555-0158. Tuesday December 29, 2026 at 1:00 PM."
+  },
+  {
+    "scenario_id": "CALL-27",
+    "business_type": "Fictional Electrical Co (Summit Electric.example)",
+    "disruptions": ["impossible_closed_day_appointment_renegotiated"],
+    "transcript": "Caller: Hi, this is Derek Lawson, 205-555-0194. I need two ceiling fans wired in my living room. Can you come Sunday December 27, 2026 at 10:00 AM? Assistant: We're closed on Sundays — our next open slot is Tuesday December 29, 2026 at 9:30 AM. Caller: Oh gotcha, okay, put me down for Tuesday December 29, 2026 at 9:30 AM then."
+  },
+  {
+    "scenario_id": "CALL-28",
+    "business_type": "Fictional Roofing Co (Cedar Ridge Roofing.example)",
+    "disruptions": ["impossible_closed_day_appointment_renegotiated", "background_noise"],
+    "transcript": "Caller: [traffic noise] This is Patricia Boone, 205-555-0169. Lost some shingles on the back slope, need a shingle patch estimate. How about New Year's Day, Friday January 1, 2027 at 9:00 AM? Assistant: We're closed for New Year's Day — we reopen Monday January 4, 2027 at 8:30 AM. Caller: Fair enough, book Monday January 4, 2027 at 8:30 AM."
+  },
+  {
+    "scenario_id": "CALL-29",
+    "business_type": "Fictional Lawn Equipment Shop (Meadows Mower.example)",
+    "disruptions": ["misspelled_name_then_corrected", "digit_by_digit_phone"],
+    "transcript": "Caller: Need a riding mower drive belt replacement. Name is Geoffrey Phillips — that's G-E-O-F-F-R-E-Y, last name P-H-I-L-I-P-S... wait no, two L's: P-H-I-L-L-I-P-S. Phone 2-0-5, 5-5-5, 0-1-4-5. Wednesday December 30, 2026 at 10:30 AM."
+  },
+  {
+    "scenario_id": "CALL-30",
+    "business_type": "Fictional Computer Help (Example Local Tech)",
+    "disruptions": ["landline_callback_no_sms", "spelled_name"],
+    "transcript": "Caller: Good afternoon, this is Evelyn Kowalczyk — K-O-W-A-L-C-Z-Y-K. My email password stopped working on my iPad. Call my house landline at 205-555-0118, I do not own a cell phone. Wednesday December 30, 2026 at 3:00 PM."
+  },
+  {
+    "scenario_id": "CALL-31",
+    "business_type": "Fictional Pest Control (Valley Pest.example)",
+    "disruptions": ["spanish_language_caller", "wrong_phone_then_corrected"],
+    "transcript": "Caller: Buenas tardes, soy Lucia Herrera. Tenemos avispas en el porche de atras y necesito una inspeccion de control de plagas. Mi telefono es 205-555-0172 — perdon, 205-555-0173. Para el jueves 31 de diciembre de 2026 a las 9:00 de la manana."
+  },
+  {
+    "scenario_id": "CALL-32",
+    "business_type": "Fictional HVAC Shop (Oakridge Heating.example)",
+    "disruptions": ["angry_caller_talking_over_assistant", "changed_appointment_time"],
+    "transcript": "Assistant: Oakridge Heating, how can I— Caller: [talking over assistant] Look, my thermostat screen is completely dead and it's 48 degrees in here! Don't put me on hold! Name is Raymond Cole, 205-555-0181. I wanted 4:00 PM today, wait no, my brother can let you in Monday January 4, 2027 at 10:00 AM."
+  },
+  {
+    "scenario_id": "CALL-33",
+    "business_type": "Fictional Auto Repair (Pinehill Garage.example)",
+    "disruptions": ["mumbled_speech", "digit_by_digit_phone"],
+    "transcript": "Caller: [mumbled] ...alternator testing, battery light stays on. Name is Quentin... Quentin Bellamy, B-E-L-L-A-M-Y. Callback two zero five, five five five, zero one two nine. Tuesday January 5, 2027 at 1:30 PM."
+  },
+  {
+    "scenario_id": "CALL-34",
+    "business_type": "Fictional Tree Service (Walker Tree.example)",
+    "disruptions": ["background_noise", "interruption"],
+    "transcript": "Caller: [sawmill noise] Hey, this is Travis Callahan. Need stump grinding for two pine stumps in the front yard. Hang on—[yells: 'Shut that off for a second!'] Okay, number is 205-555-0153. Wednesday January 6, 2027 at 11:00 AM."
+  },
+  {
+    "scenario_id": "CALL-35",
+    "business_type": "Fictional Plumbing Co (Creekside Plumbing.example)",
+    "disruptions": ["spelled_name", "wrong_phone_then_corrected"],
+    "transcript": "Caller: Hi, I need a toilet flapper and fill valve replaced. Name is Ananya Deshmukh — A-N-A-N-Y-A, D-E-S-H-M-U-K-H. Reach me at 205-555-0131, oops no, 205-555-0134. Thursday January 7, 2027 at 2:15 PM."
+  },
+  {
+    "scenario_id": "CALL-36",
+    "business_type": "Fictional Electrical Co (Summit Electric.example)",
+    "disruptions": ["clean_baseline"],
+    "transcript": "Caller: Good morning, my name is Samuel Whitman. I need a whole-home surge protector installed at our main panel. My number is 205-555-0196. Friday January 8, 2027 at 9:00 AM works well."
+  },
+  {
+    "scenario_id": "CALL-37",
+    "business_type": "Fictional Computer Help (Example Local Tech)",
+    "disruptions": ["changed_appointment_time", "spelled_name"],
+    "transcript": "Caller: Hello, this is Nadine O'Sullivan — O apostrophe S-U-L-L-I-V-A-N. Need help setting up automated cloud backups for our small office PC. Phone 205-555-0164. Originally thought Monday morning, let's do Monday January 11, 2027 at 3:30 PM."
+  },
+  {
+    "scenario_id": "CALL-38",
+    "business_type": "Fictional Dental Clinic (Riverbend Dental.example)",
+    "disruptions": ["impossible_closed_day_appointment_renegotiated"],
+    "transcript": "Caller: Hi, this is Owen Gallagher, 205-555-0126. I need a toothache evaluation. Can I come in Saturday January 9, 2027 at 1:00 PM? Assistant: We're closed Saturdays — I have Tuesday January 12, 2027 at 8:30 AM open. Caller: Okay, Tuesday January 12, 2027 at 8:30 AM works."
+  },
+  {
+    "scenario_id": "CALL-39",
+    "business_type": "Fictional Roofing Co (Cedar Ridge Roofing.example)",
+    "disruptions": ["mumbled_speech", "wrong_phone_then_corrected"],
+    "transcript": "Caller: Need gutter guard installation quote. Name is [mumbled] uh, Harold... Harold MacIntyre, M-A-C-I-N-T-Y-R-E. Call 205-555-0146 — sorry, 205-555-0147. Wednesday January 13, 2027 at 10:00 AM."
+  },
+  {
+    "scenario_id": "CALL-40",
+    "business_type": "Fictional Lawn Equipment Shop (Meadows Mower.example)",
+    "disruptions": ["interruption", "misspelled_name_then_corrected", "landline_callback_no_sms"],
+    "transcript": "Caller: Hi, my leaf blower pull cord snapped — need a recoil starter repair. Name is Dianne Greene, G-R-E-E-N... wait, with an E at the end: G-R-E-E-N-E. Hold on, dog's at the door... okay. Call my landline 205-555-0189, no texts. Thursday January 14, 2027 at 1:00 PM."
+  }
+]

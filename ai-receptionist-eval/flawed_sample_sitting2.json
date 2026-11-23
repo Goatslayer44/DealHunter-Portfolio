@@ -1,0 +1,50 @@
+[
+  {
+    "scenario_id": "CALL-21",
+    "caller_name": "Jordan Ellis",
+    "callback_number": "205-555-0184",
+    "service_requested": "Minivan wheel alignment",
+    "preferred_datetime": "2026-12-23 09:00",
+    "notes": "Planted error: same-name mixup (copied CALL-22's phone and service onto CALL-21)."
+  },
+  {
+    "scenario_id": "CALL-23",
+    "caller_name": "Martha Holloway",
+    "callback_number": "205-555-0132",
+    "service_requested": "Home printer connection troubleshooting",
+    "preferred_datetime": "2026-12-24 10:00",
+    "notes": "Planted error: landline digits misread/transposed (0132 vs 0123)."
+  },
+  {
+    "scenario_id": "CALL-24",
+    "caller_name": "Victor Ramires",
+    "callback_number": "205-555-0162",
+    "service_requested": "Burst basement pipe emergency repair",
+    "preferred_datetime": "2026-12-28 08:00",
+    "notes": "Planted error: angry caller interruption led to misspelled last name (Ramires vs Ramirez)."
+  },
+  {
+    "scenario_id": "CALL-25",
+    "caller_name": "Carlos Mendoza",
+    "callback_number": "205-555-0137",
+    "service_requested": "Truck battery replacement",
+    "preferred_datetime": "2026-12-28 13:00",
+    "notes": "Planted error: Spanish caller time misread (13:00 vs 11:00)."
+  },
+  {
+    "scenario_id": "CALL-26",
+    "caller_name": "Erica Schmit",
+    "callback_number": "205-555-0158",
+    "service_requested": "Crown re-cementing",
+    "preferred_datetime": "2026-12-29 13:00",
+    "notes": "Planted error: kept initial wrong spelling Schmit instead of corrected Schmidt."
+  },
+  {
+    "scenario_id": "CALL-27",
+    "caller_name": "Derek Lawson",
+    "callback_number": "205-555-0194",
+    "service_requested": "Two living room ceiling fans wiring",
+    "preferred_datetime": "2026-12-27 10:00",
+    "notes": "Planted error: accepted impossible closed Sunday time as-is instead of agreed Dec 29 09:30."
+  }
+]

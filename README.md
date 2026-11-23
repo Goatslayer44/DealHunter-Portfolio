@@ -46,6 +46,31 @@ See its [README](domain-security-audit/README.md) for details.
 python domain-security-audit/domain_security_check.py --input domain-security-audit/samples/sample_fictional_shop.example.json
 ```
 
+## Featured: AI Receptionist Feasibility Eval
+
+The [`ai-receptionist-eval/`](ai-receptionist-eval/) folder contains an offline,
+zero-dependency Python evaluation harness testing whether an AI phone assistant can
+reliably extract structured customer intake records (spelled names, 10-digit callback
+numbers, services, and agreed appointment times) under realistic call disruptions—and
+comparing it honestly against a simpler **Missed-Call Text-Back + Inquiry Organizer**.
+
+- **Current state:** 40 fictional call scenarios (`CALL-01`–`CALL-40`), strict JSON
+  schema, hardened field-level scorer with zero silent passes (`EXACT` vs. `NORMALIZED`
+  vs. `MISMATCH`), **7/7 offline unit tests passing**, official-source GPT-Live-1.1
+  research memo, and comparison one-pager.
+- **Fictional-data rule:** 100% fictional callers, `.example` businesses, and `555`
+  numbers only. Zero paid API calls, zero real phone numbers, zero recorded calls.
+- **What it refuses to claim:** Does not claim live voice/audio accuracy, Spanish
+  acoustic performance, or real-world telephony/backend cost quotes (all marked
+  `UNVERIFIED` until measured on a real line).
+
+See its [README](ai-receptionist-eval/README.md) for documented normalization rules and
+usage.
+
+```bash
+python ai-receptionist-eval/scorer.py --gold ai-receptionist-eval/gold_answers.json --pred ai-receptionist-eval/gold_answers.json --fail-on-schema-error
+```
+
 ## Product Matching and Profit Demo Features
 
 - Rule-based product identification using regular expressions
@@ -89,6 +114,7 @@ Tests use in-memory databases, so they do not create or change `portfolio.db`.
 | `security_log_analyzer/` | Authentication log analyzer with sample data, docs, and tests |
 | `email-header-triage/` | Offline `.eml` header & phishing triage analyzer with synthetic samples and tests |
 | `domain-security-audit/` | Public-records SPF/DMARC/HTTPS checkup tool (no port scanning) with synthetic samples and tests |
+| `ai-receptionist-eval/` | Offline 40-scenario AI receptionist feasibility harness & hardened scorer (fictional data only) |
 | `.github/workflows/tests.yml` | Runs the tests on every push and pull request |
 
 ## Example Output

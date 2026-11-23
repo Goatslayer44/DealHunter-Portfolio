@@ -1,0 +1,322 @@
+[
+  {
+    "scenario_id": "CALL-01",
+    "caller_name": "Marek Kowalski",
+    "callback_number": "205-555-0114",
+    "service_requested": "Furnace repair (no heat)",
+    "preferred_datetime": "2026-11-24 09:00",
+    "notes": "Thermostat clicks but furnace is not blowing warm air."
+  },
+  {
+    "scenario_id": "CALL-02",
+    "caller_name": "Denise Carter",
+    "callback_number": "205-555-0198",
+    "service_requested": "Brake pad replacement",
+    "preferred_datetime": "2026-11-25 13:30",
+    "notes": "Sedan front brakes squealing; caller corrected phone from 0182 to 0198."
+  },
+  {
+    "scenario_id": "CALL-03",
+    "caller_name": "Trevor Boudreaux",
+    "callback_number": "205-555-0127",
+    "service_requested": "Kitchen sink drain unclogging",
+    "preferred_datetime": "2026-11-23 14:00",
+    "notes": "Caller changed appointment from 10:00 AM to 2:00 PM."
+  },
+  {
+    "scenario_id": "CALL-04",
+    "caller_name": "Minh Nguyen",
+    "callback_number": "205-555-0143",
+    "service_requested": "New Windows laptop setup and photo transfer",
+    "preferred_datetime": "2026-11-26 11:00",
+    "notes": "Spelled name; repeated phone number clearly after initial mumble."
+  },
+  {
+    "scenario_id": "CALL-05",
+    "caller_name": "Gary Hensley",
+    "callback_number": "205-555-0155",
+    "service_requested": "Zero-turn mower blade sharpening and oil change",
+    "preferred_datetime": "2026-11-27 08:30",
+    "notes": "54-inch mower deck."
+  },
+  {
+    "scenario_id": "CALL-06",
+    "caller_name": "Siobhan Gallagher",
+    "callback_number": "205-555-0116",
+    "service_requested": "Routine dental cleaning",
+    "preferred_datetime": "2026-11-30 15:00",
+    "notes": "Caller corrected transposed last digits from 0161 to 0116."
+  },
+  {
+    "scenario_id": "CALL-07",
+    "caller_name": "Angela Morales",
+    "callback_number": "205-555-0174",
+    "service_requested": "Breaker panel inspection",
+    "preferred_datetime": "2026-12-02 09:30",
+    "notes": "Garage breaker keeps tripping; changed from Tuesday 4:00 PM to Wednesday 9:30 AM."
+  },
+  {
+    "scenario_id": "CALL-08",
+    "caller_name": "Raymond Pritchard",
+    "callback_number": "205-555-0139",
+    "service_requested": "Annual furnace tune-up",
+    "preferred_datetime": "2026-12-03 13:00",
+    "notes": "Line had static; last name spelled out."
+  },
+  {
+    "scenario_id": "CALL-09",
+    "caller_name": "Hannah Brooks",
+    "callback_number": "205-555-0102",
+    "service_requested": "Oil change and tire rotation",
+    "preferred_datetime": "2026-12-04 10:30",
+    "notes": "2021 pickup."
+  },
+  {
+    "scenario_id": "CALL-10",
+    "caller_name": "Kevin Okafor",
+    "callback_number": "205-555-0149",
+    "service_requested": "Leaking water heater repair",
+    "preferred_datetime": "2026-12-07 08:00",
+    "notes": "Corrected phone from 0148 to 0149 and moved time from noon to 8:00 AM."
+  },
+  {
+    "scenario_id": "CALL-11",
+    "caller_name": "Priya Subramanian",
+    "callback_number": "205-555-0188",
+    "service_requested": "Office Wi-Fi router troubleshooting",
+    "preferred_datetime": "2026-12-08 14:30",
+    "notes": "Small 4-person office; router keeps dropping out."
+  },
+  {
+    "scenario_id": "CALL-12",
+    "caller_name": "Curtis McAllister",
+    "callback_number": "205-555-0170",
+    "service_requested": "Roof leak inspection",
+    "preferred_datetime": "2026-12-09 11:30",
+    "notes": "Storm damage leak; brief interruption at door."
+  },
+  {
+    "scenario_id": "CALL-13",
+    "caller_name": "Brenda Zielinski",
+    "callback_number": "205-555-0133",
+    "service_requested": "Quarterly pest spray",
+    "preferred_datetime": "2026-12-10 15:30",
+    "notes": "Ants in pantry; changed time from 9:00 AM to 3:30 PM."
+  },
+  {
+    "scenario_id": "CALL-14",
+    "caller_name": "Darryl Jenkins",
+    "callback_number": "205-555-0192",
+    "service_requested": "Tree trimming estimate",
+    "preferred_datetime": "2026-12-11 09:00",
+    "notes": "Dead oak limb over driveway; corrected phone from 0191 to 0192."
+  },
+  {
+    "scenario_id": "CALL-15",
+    "caller_name": "Naomi Patel",
+    "callback_number": "205-555-0121",
+    "service_requested": "Emergency dental exam",
+    "preferred_datetime": "2026-12-14 08:15",
+    "notes": "Chipped molar."
+  },
+  {
+    "scenario_id": "CALL-16",
+    "caller_name": "Wojciech Nowak",
+    "callback_number": "205-555-0166",
+    "service_requested": "Malware checkup and password reset help",
+    "preferred_datetime": "2026-12-15 10:00",
+    "notes": "Clicked suspicious email link."
+  },
+  {
+    "scenario_id": "CALL-17",
+    "caller_name": "Leonidas Vance",
+    "callback_number": "205-555-0108",
+    "service_requested": "OBD diagnostic scan",
+    "preferred_datetime": "2026-12-16 14:00",
+    "notes": "Check engine light; corrected phone from 0109 to 0108."
+  },
+  {
+    "scenario_id": "CALL-18",
+    "caller_name": "Evelyn Choi",
+    "callback_number": "205-555-0150",
+    "service_requested": "240V EV charger outlet installation quote",
+    "preferred_datetime": "2026-12-18 10:00",
+    "notes": "Changed from Thursday 1:00 PM to Friday 10:00 AM."
+  },
+  {
+    "scenario_id": "CALL-19",
+    "caller_name": "Caleb Thibodeaux",
+    "callback_number": "205-555-0177",
+    "service_requested": "Chainsaw carburetor rebuild",
+    "preferred_datetime": "2026-12-21 09:00",
+    "notes": "Chainsaw will not stay running at idle."
+  },
+  {
+    "scenario_id": "CALL-20",
+    "caller_name": "Sharon Al-Mansoor",
+    "callback_number": "205-555-0113",
+    "service_requested": "Outdoor spigot leak repair",
+    "preferred_datetime": "2026-12-22 13:15",
+    "notes": "Corrected phone from 0112 to 0113 and moved time from 4:00 PM to 1:15 PM."
+  },
+  {
+    "scenario_id": "CALL-21",
+    "caller_name": "Jordan Ellis",
+    "callback_number": "205-555-0141",
+    "service_requested": "Heat pump rattling noise repair",
+    "preferred_datetime": "2026-12-23 09:00",
+    "notes": "Same name as CALL-22; unit on south side of house."
+  },
+  {
+    "scenario_id": "CALL-22",
+    "caller_name": "Jordan Ellis",
+    "callback_number": "205-555-0184",
+    "service_requested": "Minivan wheel alignment",
+    "preferred_datetime": "2026-12-23 14:00",
+    "notes": "Same name as CALL-21; distinct caller and phone number."
+  },
+  {
+    "scenario_id": "CALL-23",
+    "caller_name": "Martha Holloway",
+    "callback_number": "205-555-0123",
+    "service_requested": "Home printer connection troubleshooting",
+    "preferred_datetime": "2026-12-24 10:00",
+    "notes": "Callback number is a home landline; voice call only, no SMS."
+  },
+  {
+    "scenario_id": "CALL-24",
+    "caller_name": "Victor Ramirez",
+    "callback_number": "205-555-0162",
+    "service_requested": "Burst basement pipe emergency repair",
+    "preferred_datetime": "2026-12-28 08:00",
+    "notes": "Angry caller talking over assistant; main shutoff is off."
+  },
+  {
+    "scenario_id": "CALL-25",
+    "caller_name": "Carlos Mendoza",
+    "callback_number": "205-555-0137",
+    "service_requested": "Truck battery replacement",
+    "preferred_datetime": "2026-12-28 11:00",
+    "notes": "Spanish-language caller; truck struggles to start in the morning."
+  },
+  {
+    "scenario_id": "CALL-26",
+    "caller_name": "Erica Schmidt",
+    "callback_number": "205-555-0158",
+    "service_requested": "Crown re-cementing",
+    "preferred_datetime": "2026-12-29 13:00",
+    "notes": "Caller initially spelled S-C-H-M-I-T then corrected to S-C-H-M-I-D-T."
+  },
+  {
+    "scenario_id": "CALL-27",
+    "caller_name": "Derek Lawson",
+    "callback_number": "205-555-0194",
+    "service_requested": "Two living room ceiling fans wiring",
+    "preferred_datetime": "2026-12-29 09:30",
+    "notes": "First requested closed Sunday Dec 27; agreed on Tuesday Dec 29 at 9:30 AM."
+  },
+  {
+    "scenario_id": "CALL-28",
+    "caller_name": "Patricia Boone",
+    "callback_number": "205-555-0169",
+    "service_requested": "Shingle patch estimate",
+    "preferred_datetime": "2027-01-04 08:30",
+    "notes": "First requested closed New Year's Day Jan 1; agreed on Monday Jan 4 at 8:30 AM."
+  },
+  {
+    "scenario_id": "CALL-29",
+    "caller_name": "Geoffrey Phillips",
+    "callback_number": "205-555-0145",
+    "service_requested": "Riding mower drive belt replacement",
+    "preferred_datetime": "2026-12-30 10:30",
+    "notes": "Caller corrected last name spelling from Philips to Phillips."
+  },
+  {
+    "scenario_id": "CALL-30",
+    "caller_name": "Evelyn Kowalczyk",
+    "callback_number": "205-555-0118",
+    "service_requested": "iPad email password troubleshooting",
+    "preferred_datetime": "2026-12-30 15:00",
+    "notes": "Home landline only; caller has no cell phone."
+  },
+  {
+    "scenario_id": "CALL-31",
+    "caller_name": "Lucia Herrera",
+    "callback_number": "205-555-0173",
+    "service_requested": "Back porch wasp pest inspection",
+    "preferred_datetime": "2026-12-31 09:00",
+    "notes": "Spanish-language caller; corrected phone from 0172 to 0173."
+  },
+  {
+    "scenario_id": "CALL-32",
+    "caller_name": "Raymond Cole",
+    "callback_number": "205-555-0181",
+    "service_requested": "Dead thermostat repair",
+    "preferred_datetime": "2027-01-04 10:00",
+    "notes": "Angry caller; brother will let technician in at agreed Monday 10:00 AM slot."
+  },
+  {
+    "scenario_id": "CALL-33",
+    "caller_name": "Quentin Bellamy",
+    "callback_number": "205-555-0129",
+    "service_requested": "Alternator testing",
+    "preferred_datetime": "2027-01-05 13:30",
+    "notes": "Battery light stays on; digit-by-digit phone."
+  },
+  {
+    "scenario_id": "CALL-34",
+    "caller_name": "Travis Callahan",
+    "callback_number": "205-555-0153",
+    "service_requested": "Stump grinding for two pine stumps",
+    "preferred_datetime": "2027-01-06 11:00",
+    "notes": "Front yard stumps; sawmill background noise."
+  },
+  {
+    "scenario_id": "CALL-35",
+    "caller_name": "Ananya Deshmukh",
+    "callback_number": "205-555-0134",
+    "service_requested": "Toilet flapper and fill valve replacement",
+    "preferred_datetime": "2027-01-07 14:15",
+    "notes": "Spelled name; corrected phone from 0131 to 0134."
+  },
+  {
+    "scenario_id": "CALL-36",
+    "caller_name": "Samuel Whitman",
+    "callback_number": "205-555-0196",
+    "service_requested": "Whole-home surge protector installation",
+    "preferred_datetime": "2027-01-08 09:00",
+    "notes": "Main panel installation."
+  },
+  {
+    "scenario_id": "CALL-37",
+    "caller_name": "Nadine O'Sullivan",
+    "callback_number": "205-555-0164",
+    "service_requested": "Automated cloud backup setup for office PC",
+    "preferred_datetime": "2027-01-11 15:30",
+    "notes": "Apostrophe in last name; moved from Monday morning to 3:30 PM."
+  },
+  {
+    "scenario_id": "CALL-38",
+    "caller_name": "Owen Gallagher",
+    "callback_number": "205-555-0126",
+    "service_requested": "Toothache evaluation",
+    "preferred_datetime": "2027-01-12 08:30",
+    "notes": "First requested closed Saturday Jan 9; agreed on Tuesday Jan 12 at 8:30 AM."
+  },
+  {
+    "scenario_id": "CALL-39",
+    "caller_name": "Harold MacIntyre",
+    "callback_number": "205-555-0147",
+    "service_requested": "Gutter guard installation quote",
+    "preferred_datetime": "2027-01-13 10:00",
+    "notes": "Corrected phone from 0146 to 0147."
+  },
+  {
+    "scenario_id": "CALL-40",
+    "caller_name": "Dianne Greene",
+    "callback_number": "205-555-0189",
+    "service_requested": "Leaf blower recoil starter repair",
+    "preferred_datetime": "2027-01-14 13:00",
+    "notes": "Corrected last name Green -> Greene; home landline, no texts."
+  }
+]
