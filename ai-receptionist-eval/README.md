@@ -6,14 +6,17 @@ Offline evaluation harness to measure whether an AI phone assistant can reliably
 - **100% local & offline ($0):** Zero paid API calls, zero real phone numbers, zero real calls recorded, zero customer outreach.
 - **Fictional data only:** All 40 scenarios (`CALL-01`..`CALL-40`) use fictional businesses (`.example`) and fictional `555` phone numbers.
 
-## Files (Sitting 1 + Sitting 2)
+## Files (Sittings 1–4)
 - `scenarios.json` — 40 fictional small-business call transcripts covering: spelled names, digit-by-digit phone dictation, mid-call phone/time corrections, interruptions, background noise, mumbled speech, **two distinct callers with the same name (`CALL-21`/`CALL-22`)**, **landline-only callbacks (`CALL-23`/`CALL-30`/`CALL-40`)**, **angry callers talking over the assistant (`CALL-24`/`CALL-32`)**, **Spanish-language callers (`CALL-25`/`CALL-31`)**, **misspelled-then-corrected names (`CALL-26`/`CALL-29`/`CALL-40`)**, and **impossible closed-day appointments renegotiated to an open slot (`CALL-27`/`CALL-28`/`CALL-38`)**.
 - `gold_answers.json` — Exact structured gold records for all 40 scenarios (for impossible-day requests, gold captures the **actually agreed** open slot, never the rejected first request).
 - `schema.json` — Strict output schema (required keys, `additionalProperties: false`, strict `YYYY-MM-DD HH:MM` datetime format).
 - `flawed_sample.json` — Sitting 1 planted-error sample (misspelled name, transposed phone digits, wrong time, missing field).
 - `flawed_sample_sitting2.json` — Sitting 2 planted-error sample (same-name mixup, landline misread, angry-caller misspelling, Spanish-caller wrong time, kept wrong initial spelling, impossible closed-day accepted as-is).
 - `scorer.py` — Stdlib-only validator and hardened field-level scorer.
-- `test_scorer.py` — Offline `unittest` suite (7 tests).
+- `test_scorer.py` — Offline `unittest` suite for the scorer (7 tests).
+- `DESIGN.md` — Sitting 3 mock pipeline architecture (`PSTN -> Live Voice/STT -> Extraction -> Schema Gate -> Scorer`), expected break points tied to `CALL-01`–`CALL-40`, updated cost model (verified `$0.05/$0.02` vs. `UNVERIFIED`), and Missed-Call Text-Back baseline design.
+- `missed_call_textback.py` — Sitting 4 local Missed-Call Text-Back + Inquiry Organizer prototype ($0, offline): captures Caller ID, routes non-SMS landlines (`CALL-23`, `CALL-30`, `CALL-40`) to a voice callback queue, parses typed mobile replies into `schema.json`, respects `STOP` opt-outs, flags incomplete/closed-weekend replies, and scores head-to-head via the exact same `scorer.py` (`37/40` mobile at `100.00%` exact / `0` normalized; `92.50%` across all 40 with 3 landlines honestly routed to voice).
+- `test_missed_call_textback.py` — Offline `unittest` suite for the Missed-Call Text-Back prototype (4 tests; 11 tests total across the suite).
 - `RESEARCH_MEMO.md` — Official-sources-only GPT-Live-1.1 pricing, cost estimates, consent risks, and failure modes.
 - `COMPARISON.md` — One-pager comparing AI Voice Receptionist vs. Missed-Call Text-Back.
 
@@ -48,8 +51,11 @@ Every core field is scored into one of three explicit states: **`EXACT`**, **`NO
 ```powershell
 cd C:\Users\ColtonThorpe\DealHunter
 
-# Run all 7 offline unit tests
+# Run all 11 offline unit tests (7 scorer + 4 missed-call text-back)
 .\.venv\Scripts\python.exe -B -m unittest discover -s business_tools\ai-receptionist-eval -p "test_*.py" -v
+
+# Run Sitting 4 local Missed-Call Text-Back head-to-head simulation
+.\.venv\Scripts\python.exe business_tools\ai-receptionist-eval\missed_call_textback.py --scenarios business_tools\ai-receptionist-eval\scenarios.json --gold business_tools\ai-receptionist-eval\gold_answers.json
 
 # Score gold against gold on all 40 scenarios (must be 100.00% exact, 0 normalized)
 .\.venv\Scripts\python.exe business_tools\ai-receptionist-eval\scorer.py --gold business_tools\ai-receptionist-eval\gold_answers.json --pred business_tools\ai-receptionist-eval\gold_answers.json --fail-on-schema-error

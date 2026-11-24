@@ -56,8 +56,11 @@ comparing it honestly against a simpler **Missed-Call Text-Back + Inquiry Organi
 
 - **Current state:** 40 fictional call scenarios (`CALL-01`–`CALL-40`), strict JSON
   schema, hardened field-level scorer with zero silent passes (`EXACT` vs. `NORMALIZED`
-  vs. `MISMATCH`), **7/7 offline unit tests passing**, official-source GPT-Live-1.1
-  research memo, and comparison one-pager.
+  vs. `MISMATCH`), mock pipeline design & cost model (`DESIGN.md`), local
+  **Missed-Call Text-Back** prototype (`missed_call_textback.py`, scoring `37/40`
+  fictional mobile calls at `100%` exact / `0` normalized and routing `3` landlines
+  to a voice callback queue), **11/11 offline unit tests passing**, official-source
+  GPT-Live-1.1 research memo, and comparison one-pager.
 - **Fictional-data rule:** 100% fictional callers, `.example` businesses, and `555`
   numbers only. Zero paid API calls, zero real phone numbers, zero recorded calls.
 - **What it refuses to claim:** Does not claim live voice/audio accuracy, Spanish
