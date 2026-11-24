@@ -2,6 +2,10 @@
 
 ![Tests](https://github.com/Goatslayer44/DealHunter-Portfolio/actions/workflows/tests.yml/badge.svg)
 
+## Who's behind this
+
+I'm Colton Thorpe, a cybersecurity student at Bevill State Community College (A.A.S., April 2027) and the owner of 205 Digital Help & Research in Jasper, Alabama. I build and test small, practical tools for local businesses — email and website security checks, spreadsheet cleanup, and a missed-call text-back pilot — and I publish the test results, including what the tools can't claim yet.
+
 A small Python project that identifies products from their titles, estimates
 resale profit, and stores results in a SQLite database. It is a beginner-level
 portfolio project built to practice Python, SQL, input validation, and automated testing.
@@ -54,13 +58,15 @@ reliably extract structured customer intake records (spelled names, 10-digit cal
 numbers, services, and agreed appointment times) under realistic call disruptions—and
 comparing it honestly against a simpler **Missed-Call Text-Back + Inquiry Organizer**.
 
-- **Current state:** 40 fictional call scenarios (`CALL-01`–`CALL-40`), strict JSON
-  schema, hardened field-level scorer with zero silent passes (`EXACT` vs. `NORMALIZED`
-  vs. `MISMATCH`), mock pipeline design & cost model (`DESIGN.md`), local
-  **Missed-Call Text-Back** prototype (`missed_call_textback.py`, scoring `37/40`
-  fictional mobile calls at `100%` exact / `0` normalized and routing `3` landlines
-  to a voice callback queue), **11/11 offline unit tests passing**, official-source
-  GPT-Live-1.1 research memo, and comparison one-pager.
+- **Current state:** 5-sitting roadmap complete — 40 fictional call scenarios
+  (`CALL-01`–`CALL-40`), strict JSON schema, hardened field-level scorer with zero
+  silent passes (`EXACT` vs. `NORMALIZED` vs. `MISMATCH`), mock pipeline design &
+  cost model (`DESIGN.md`), local **Missed-Call Text-Back** prototype
+  (`missed_call_textback.py`, scoring `37/40` fictional mobile calls at `100%` exact
+  / `0` normalized and routing `3` landlines to a voice callback queue), **11/11
+  offline unit tests passing**, official-source GPT-Live-1.1 research memo,
+  comparison one-pager, `DEMO-SCRIPT.md` (the 60-second pilot demo script), and
+  `CANT-CLAIM.md` (the truth-boundaries doc).
 - **Fictional-data rule:** 100% fictional callers, `.example` businesses, and `555`
   numbers only. Zero paid API calls, zero real phone numbers, zero recorded calls.
 - **What it refuses to claim:** Does not claim live voice/audio accuracy, Spanish
